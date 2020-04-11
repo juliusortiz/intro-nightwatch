@@ -1,5 +1,5 @@
 module.exports = {
-    src_folders: ["tests"],
+    src_folders: ["dice205-website"],
 
     webdriver: {
         start_process: true,
@@ -9,7 +9,6 @@ module.exports = {
 
     test_settings: {
         default: {
-            launch_url: 'https://www.dice205.com/',
             desiredCapabilities: {
                 browserName: "chrome",
                 javascriptEnabled: true,

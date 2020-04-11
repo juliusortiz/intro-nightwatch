@@ -36,4 +36,17 @@ module.exports = {
             .useXpath()
             .assert.visible("//input[@id='btn-send-email']")
     },
-};
+    "Step 6: Fill up all the required fields then click submit": function(browser) {
+        browser
+            .useXpath()
+            .setValue("//input[@id='email']", 'dice205test@gmail.com')
+            .setValue("//input[@id='name']", 'Juan Dela Cruz')
+            .setValue("//input[@id='contact_number']", '09356285322')
+            .setValue("//textarea[@id='message']", 'This is tested using nightwatch.js')
+            .useCss()
+            .setValue('#browse-button', require('path').resolve(__dirname + '../test_output/chromedriver.log'))
+            .useXpath()
+            .assert.visible("//input[@id='btn-send-email']")
+            .end()
+    }
+}
