@@ -1,4 +1,7 @@
 module.exports = {
+    
+    '@tags': ['navigation'],
+
     "Step 1: Navigate to dice205.com": function(browser) {
         browser
             .url("https://www.dice205.com/")
