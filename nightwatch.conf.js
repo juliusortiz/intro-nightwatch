@@ -1,5 +1,7 @@
 module.exports = {
-    src_folders: ["dice205-website"],
+    'src_folders': ['jfc-ihr'],
+    //'src_folders': ['dice205-website'],
+    'page_objects_path': ['page-objects'],
 
     webdriver: {
         start_process: true,
@@ -9,13 +11,13 @@ module.exports = {
 
     test_settings: {
         default: {
-            desiredCapabilities: {
-                browserName: "chrome",
+            desiredCapabilities: {  
+                browserName: "chrome",  
                 javascriptEnabled: true,
                 chromeOptions: {
                     args: [
                         "start-maximized",
-                        //"--headless",
+                        "--headless",
                         //"--verbose",
                         //"--disable-gpu=true",
                     ],

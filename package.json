@@ -7,7 +7,7 @@
         "test": "nightwatch"
     },
     "keywords": [],
-    "author": "",
+    "author": "Julius John Roel Ortiz",
     "license": "ISC",
     "devDependencies": {
         "chromedriver": "^79.0.3",
